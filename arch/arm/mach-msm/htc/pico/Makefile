@@ -1,0 +1,10 @@
+obj-$(CONFIG_MACH_PICO) += board-pico.o board-msm7627a-storage.o board-7627a-all.o
+obj-$(CONFIG_MACH_PICO) += board-pico-keypad.o
+obj-$(CONFIG_MACH_PICO) += htc_bdaddress.o board-pico-rfkill.o
+obj-$(CONFIG_MACH_PICO) += board-pico-mmc.o 
+obj-$(CONFIG_MACH_PICO) += devices-msm7x27a.o
+obj-$(CONFIG_MACH_PICO) += board-pico-wifi.o
+obj-$(CONFIG_MACH_PICO) += board-msm7627a-storage.o board-7627a-all.o
+obj-$(CONFIG_MACH_PICO) += htc_sleep_clk.o
+obj-$(CONFIG_MACH_PICO) += display/
+CFLAGS_board-pico-display.o += -Idrivers/video

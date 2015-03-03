@@ -1,0 +1,11 @@
+config BOARD_HEADER_FILE
+	string "HTC board specific header file name"
+	default ""
+	
+config MACH_PICO
+	depends on ARCH_MSM7X27A
+	depends on !MSM_STACKED_MEMORY
+	default n
+	bool "Pico"
+	help
+	  Support for Pico (PDA phone).
