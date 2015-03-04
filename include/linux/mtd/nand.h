@@ -533,6 +533,8 @@ struct nand_chip {
 	struct nand_ecc_ctrl ecc;
 	struct nand_buffers *buffers;
 	struct nand_hw_control hwcontrol;
+	
+	struct mtd_oob_ops ops;
 
 	uint8_t *bbt;
 	struct nand_bbt_descr *bbt_td;
