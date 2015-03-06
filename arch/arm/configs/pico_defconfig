@@ -334,6 +334,17 @@ CONFIG_MSM_VIC=y
 # CONFIG_PERFLOCK is not set
 
 #
+# LGE Board Selection
+#
+CONFIG_BOARD_HEADER_FILE=""
+# CONFIG_MACH_LGE_DUMMY is not set
+
+#
+# HTC Specific Patches
+#
+CONFIG_MACH_HTC=y
+
+#
 # MSM Board Selection
 #
 # CONFIG_MACH_MSM7X27_SURF is not set
